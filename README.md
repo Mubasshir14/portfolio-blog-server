@@ -1,8 +1,19 @@
-# Backend Starter Template
+# Portfolio and Blog Website - Server Side
+## 🌍 Live Link  
+🔗 [Website](https://portfolio-blog-server.vercel.app/api) 
 
 ## Description
 
-This repository serves as a starter template for backend projects using Node.js, TypeScript, Express, and MongoDB. It includes basic configurations for linting, formatting, and development tools to streamline your development process.
+This is the backend of a Portfolio and Blog website, built with Node.js and Express.js. It provides API endpoints for managing user authentication, projects, and blog posts. Users can log in, upload projects, delete them, retrieve details, and manage blog content efficiently.
+
+## Features of This Project
+-**User Authentication:** Secure login system.
+
+-**Project Management:** Upload, delete, and retrieve project details.
+
+-**Blog Management:** Create, edit, and delete blog posts.
+
+-**Database Integration:** Stores user, project, and blog data.
 
 ## Features
 
@@ -45,7 +56,7 @@ Make sure you have the following installed:
 
 3. **Create a `.env` file** in the root directory and configure your environment variables:
    ```env
-   PORT=3000
+   PORT=5000
    DATABASE_URL= your-mongodb-uri
    ```
 
@@ -94,10 +105,29 @@ Make sure you have the following installed:
 
 ## Folder Structure
 
-```
+```bash
 ├── src
 │   ├── app
 │   ├    ├── config
+│   ├── Modules
+│   ├----├── Project
+│   ├         ├── interface.ts
+│   ├         ├── model.ts
+│   ├         ├── route.ts
+│   ├         ├── controller.ts
+│   ├         ├── service.ts
+│   ├----├── Project
+│   ├         ├── interface.ts
+│   ├         ├── model.ts
+│   ├         ├── route.ts
+│   ├         ├── controller.ts
+│   ├         ├── service.ts
+│   ├----├── Message
+│   ├         ├── interface.ts
+│   ├         ├── model.ts
+│   ├         ├── route.ts
+│   ├         ├── controller.ts
+│   ├         ├── service.ts
 │   └── server.ts
 │   └── app.ts
 ├── dist                # Compiled JavaScript files
@@ -105,6 +135,7 @@ Make sure you have the following installed:
 ├── .prettierrc         # Prettier configuration
 ├── tsconfig.json       # TypeScript configuration
 └── package.json        # Project metadata and scripts
+```
 
 ## Dependencies
 
@@ -113,21 +144,12 @@ Make sure you have the following installed:
 - `dotenv`: Load environment variables from `.env` file
 - `express`: Web framework for Node.js
 - `mongoose`: MongoDB object modeling tool
-- `zod`: TypeScript-first schema validation
 
 ### Development:
 - `typescript`: TypeScript compiler
 - `eslint`: Linting tool for JavaScript/TypeScript
 - `prettier`: Code formatter
 - `ts-node-dev`: Development server for TypeScript
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-
-1. **Fork the repository.**
-2. **Create a new branch** for your feature or bugfix.
-3. **Commit your changes** with descriptive messages.
-4. **Push your changes** and open a pull request.
 
 ---
 ```
